@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:home_page_test/login.dart';
+//import 'package:home_page_test/login.dart';
 import './post_item.dart';
 
 void main() => runApp(MyApp());
@@ -106,6 +106,37 @@ class _MyHomePageState extends State<MyHomePage> {
               img:
                   'https://searchengineland.com/figz/wp-content/seloads/2015/12/google-amp-fast-speed-travel-ss-1920.jpg',
             ),
+            PostItem(
+              displatImageURL:
+                  'https://searchengineland.com/figz/wp-content/seloads/2015/12/google-amp-fast-speed-travel-ss-1920.jpg',
+              name: 'testt',
+              time: '09:49',
+              textPreview:
+                  'เดินออกำลังกายในหมู่บ้าน ก็ฝันๆว่ากำลังเดินเล่นอยู่ทะเลสาบที่ญี่ปุ่นไปล่ะกันเนอะ...เอาน่าคิดเป็นแค่ฝันยามเย็นในวันที่ต้องอยู่บ้านติดต่อกันนานที่สุดในชีวิตการทำงานที่ผ่านมาแหละ .. #slowlifeวัย50 คิดอยู่เสมอว่าถ้าเราไม่มีสิทธิ์และสามารถ control เหตุการณ์อะไรที่เกิดขึ้นในชีวิตได้นั้น เราแค่ learn how to live with it.. ชีวิตก็จะไม่ทุกข์ ',
+              img:
+                  'https://searchengineland.com/figz/wp-content/seloads/2015/12/google-amp-fast-speed-travel-ss-1920.jpg',
+            ),
+            PostItem(
+              displatImageURL:
+                  'https://searchengineland.com/figz/wp-content/seloads/2015/12/google-amp-fast-speed-travel-ss-1920.jpg',
+              name: 'testt',
+              time: '09:49',
+              textPreview:
+                  'เดินออกำลังกายในหมู่บ้าน ก็ฝันๆว่ากำลังเดินเล่นอยู่ทะเลสาบที่ญี่ปุ่นไปล่ะกันเนอะ...เอาน่าคิดเป็นแค่ฝันยามเย็นในวันที่ต้องอยู่บ้านติดต่อกันนานที่สุดในชีวิตการทำงานที่ผ่านมาแหละ .. #slowlifeวัย50 คิดอยู่เสมอว่าถ้าเราไม่มีสิทธิ์และสามารถ control เหตุการณ์อะไรที่เกิดขึ้นในชีวิตได้นั้น เราแค่ learn how to live with it.. ชีวิตก็จะไม่ทุกข์ ',
+              img:
+                  'https://searchengineland.com/figz/wp-content/seloads/2015/12/google-amp-fast-speed-travel-ss-1920.jpg',
+            ),
+            PostItem(
+              displatImageURL:
+                  'https://searchengineland.com/figz/wp-content/seloads/2015/12/google-amp-fast-speed-travel-ss-1920.jpg',
+              name: 'testt',
+              time: '09:49',
+              textPreview:
+                  'เดินออกำลังกายในหมู่บ้าน ก็ฝันๆว่ากำลังเดินเล่นอยู่ทะเลสาบที่ญี่ปุ่นไปล่ะกันเนอะ...เอาน่าคิดเป็นแค่ฝันยามเย็นในวันที่ต้องอยู่บ้านติดต่อกันนานที่สุดในชีวิตการทำงานที่ผ่านมาแหละ .. #slowlifeวัย50 คิดอยู่เสมอว่าถ้าเราไม่มีสิทธิ์และสามารถ control เหตุการณ์อะไรที่เกิดขึ้นในชีวิตได้นั้น เราแค่ learn how to live with it.. ชีวิตก็จะไม่ทุกข์ ',
+              img:
+                  'https://searchengineland.com/figz/wp-content/seloads/2015/12/google-amp-fast-speed-travel-ss-1920.jpg',
+            ),
+
             // actionButton(),
             // topImage(),
             // description(),
@@ -137,10 +168,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 10.0,
                 child: RaisedButton(
                   child: Text("see more"),
-                  onPressed: (){},
+                  onPressed: () {},
                   color: Colors.grey.shade300,
                   textColor: Colors.black,
-                  padding: EdgeInsets.all(0),
+                  padding: EdgeInsets.all(8.0),
                   // padding: EdgeInsets.fromLTRB(3, 3, 3, 3),
                   splashColor: Colors.grey,
                 ),
@@ -149,21 +180,20 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Container(
             height: 150,
-            child:      ListView(
-            scrollDirection: Axis.horizontal,
-            children: <Widget>[
-              suggestedForYouButton(),
-            suggestedForYouButton(),
-            suggestedForYouButton(),
-            suggestedForYouButton(),
-            suggestedForYouButton(),
-            suggestedForYouButton(),
-            suggestedForYouButton(),
-            suggestedForYouButton(),
-            ],
-          ),
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: <Widget>[
+                suggestedForYouButton(),
+                suggestedForYouButton(),
+                suggestedForYouButton(),
+                suggestedForYouButton(),
+                suggestedForYouButton(),
+                suggestedForYouButton(),
+                suggestedForYouButton(),
+                suggestedForYouButton(),
+              ],
+            ),
           )
-     
         ],
       ),
     );
@@ -223,47 +253,53 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
- Widget suggestedForYouButton() {
+  Widget suggestedForYouButton() {
     return Container(
-      
       height: 150,
-      width:110,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(10),
-        child: RaisedButton(
-          color: Colors.white,
-          padding: EdgeInsets.only(top: 0),
-          child: Column(
-          
-            children: <Widget>[
-              Image.network('https://searchengineland.com/figz/wp-content/seloads/2015/12/google-amp-fast-speed-travel-ss-1920.jpg'),
-              Container(
-                
-                transform: Matrix4.translationValues(0.0, -20.0, 0.0),
-                width: 40,
-                height: 40,
-                child: CircleAvatar(
-                  backgroundImage: NetworkImage(
-                    "https://searchengineland.com/figz/wp-content/seloads/2015/12/google-amp-fast-speed-travel-ss-1920.jpg",
+      width: 110,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10),
+          child: RaisedButton(
+            color: Colors.white,
+            padding: EdgeInsets.only(top: 0),
+            child: Column(
+              children: <Widget>[
+                Image.network(
+                    'https://searchengineland.com/figz/wp-content/seloads/2015/12/google-amp-fast-speed-travel-ss-1920.jpg'),
+                Container(
+                  transform: Matrix4.translationValues(0.0, -20.0, 0.0),
+                  width: 40,
+                  height: 40,
+                  child: CircleAvatar(
+                    backgroundImage: NetworkImage(
+                      "https://searchengineland.com/figz/wp-content/seloads/2015/12/google-amp-fast-speed-travel-ss-1920.jpg",
+                    ),
+                    // backgroundColor: Colors.transparent,
                   ),
-                  // backgroundColor: Colors.transparent,
                 ),
-              ),
-              Container(transform: Matrix4.translationValues(0.0, -10.0, 0.0),
-              child: Text('Home'),
-              ),
-              Container(transform: Matrix4.translationValues(0.0, -10.0, 0.0),
-              child: Text('HomeDescription',style: TextStyle(
-                            fontSize: 10.0,
-                            // fontWeight: FontWeight.bold,
-                            color: Colors.grey,
-                          ),),
-              ),
-            ],
+                Container(
+                  transform: Matrix4.translationValues(0.0, -10.0, 0.0),
+                  child: Text('Home'),
+                ),
+                Container(
+                  transform: Matrix4.translationValues(0.0, -10.0, 0.0),
+                  child: Text(
+                    'HomeDescription',
+                    style: TextStyle(
+                      fontSize: 10.0,
+                      // fontWeight: FontWeight.bold,
+                      color: Colors.grey,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            onPressed: () {
+              print('clickk');
+            },
           ),
-          onPressed: () {
-            print('clickk');
-          },
         ),
       ),
     );
