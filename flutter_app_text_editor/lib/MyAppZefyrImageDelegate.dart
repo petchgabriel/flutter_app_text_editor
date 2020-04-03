@@ -11,10 +11,11 @@ class MyAppZefyrImageDelegate implements ZefyrImageDelegate<ImageSource> {
 
   @override
   Future<String> pickImage(ImageSource source) async {
+    print('pickImage init');
     final file = await ImagePicker.pickImage(source: source);
     if (file == null) return null;
     // We simply return the absolute path to selected file.
-    print(file.uri.toString());
+    print('paht: ${file.uri.toString()}');
     return file.uri.toString();
   }
 
